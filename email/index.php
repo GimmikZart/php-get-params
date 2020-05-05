@@ -16,12 +16,16 @@
     $findslug = strpos($emailUtente, $slug);
 
     if ($findspot == true && $findslug == true){
-      echo "OK";
+      $risultato = "OK";
     } else {
-      echo "NO";
+      $risultato = "KO";
     }
 
     ?>
+
+    <div class="">
+      <?php echo $risultato  ?>
+    </div>
 
   </body>
 </html>
